@@ -1,0 +1,57 @@
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  vertical-align: middle;
+  flex-direction: row;
+  padding: 0 4px 0 20px;
+  margin-top: 28px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px 5px 20px;
+  height: 400px;
+  text-align: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 75%;
+  top: 0px;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 2px;
+  background: transparent
+    url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif") center
+    no-repeat;
+}
+.cnt {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.column:hover {
+  transform: scale(1.15);
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}

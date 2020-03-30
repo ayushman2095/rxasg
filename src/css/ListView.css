@@ -1,0 +1,57 @@
+.j > .column1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 4px 0 20px;
+  flex-direction: column;
+}
+.row1 {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  display: flex;
+}
+.img_box img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: lightgrey
+    url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif") center
+    no-repeat;
+  background-size: 100%;
+}
+.img_box {
+  width: 25%;
+  margin: 2px;
+  padding: 2px;
+  height: 100%;
+}
+.list_img {
+  width: 75%;
+}
+._Right {
+  padding-top: 10px;
+}
+._left {
+  padding-right: 20px;
+  float: right;
+}
+.txt {
+  margin: 15px;
+}
+@media screen and (max-width: 1421px) {
+  .txt {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 846px) {
+  .row1 {
+    height: 123px;
+  }
+}

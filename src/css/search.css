@@ -1,0 +1,31 @@
+.searchbox {
+  background-color: white;
+  margin: 30px 20px;
+  height: 50px;
+  position: sticky;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+.srcBtn {
+  display: flex;
+  background-color: black;
+  height: 50px;
+  align-items: center;
+  width: 65px;
+}
+.srcBtn > i {
+  color: white;
+  width: 95px;
+}
+input.t {
+  height: 100%;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
