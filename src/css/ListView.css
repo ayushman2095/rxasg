@@ -55,3 +55,12 @@
     height: 123px;
   }
 }
+@media screen and (max-width: 450px) {
+  .row1 {
+    height: 105px;
+  }
+  .txt {
+    padding: 0px;
+    margin: 0px;
+  }
+}
